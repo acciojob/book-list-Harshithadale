@@ -1,1 +1,47 @@
 /*  your css code here. If applicable */
+body{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+input{
+	display:block;
+	margin:5px;
+	width:90vw;
+	border-style:none;
+	box-shadow:0px 0px 10px lightgray;
+	padding:10px
+}
+button{
+	background-color:#2596be;
+	padding:10px;
+	border-style:none;
+	border-radius:7px;
+	color:white;
+	font-weight:700;
+	margin:10px;
+}
+table{
+	width:90vw;
+}
+thead{
+	border-bottom:1px solid black;
+	box-shadow:0px 2px 3px black;
+}
+th{
+	padding:8px;
+}
+.row-ele{
+	background-color:lightgray;
+}
+.row-ele>td{
+	padding:7px;
+	text-align:center;
+}
+.delete-button{
+	background-color:red;
+	border:none;
+	padding:5px;
+	border-radius:0px;
+}
