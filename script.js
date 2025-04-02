@@ -15,7 +15,7 @@ function addRowToTable(){
 			const deleteButton = document.createElement("button");
 			deleteButton.textContent ="x";
 			deleteButton.setAttribute('onclick','deleteRow(this)')
-			deleteButton.setAttribute("class","delete-button")
+			deleteButton.setAttribute("class","delete delete-button")
 			data.appendChild(deleteButton)
 		}
 		else{
