@@ -13,7 +13,8 @@ function addRowToTable(){
 		const data = document.createElement("td");
 		if(i ==  3){
 			const deleteButton = document.createElement("button");
-			deleteButton.textContent ="x"
+			deleteButton.textContent ="x";
+			deleteButton.setAttribute('onclick','deleteRow(this)')
 			deleteButton.setAttribute("class","delete-button")
 			data.appendChild(deleteButton)
 		}
@@ -26,3 +27,7 @@ function addRowToTable(){
 }
 
 
+function deleteRow(button){
+	let row = button.parentNode.parentNode;
+    row.parentNode.removeChild(row)
+}
